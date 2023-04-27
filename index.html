@@ -561,57 +561,36 @@
               I'M VERY RESPOSIVE TO MESSAGES
             </h4>
             <!-- ====== Contact Form ====== -->
-            <div class="row">
-              <div class="contact-form padd-15">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea
-                        name=""
-                        class="form-control"
-                        id=""
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-                </div>
-              </div>
+            <div class="contact-col">
+              <form method="POST" action="https://formspree.io/f/xpzekjbd">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter email address"
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Enter your subject"
+                  required
+                />
+                <textarea
+                  rows="8"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button type="submit" class="hero-btn red-btn">
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </section>
